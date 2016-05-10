@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  get "restaurants", to: "restaurants#index"
-  get "restaurants/:id", to: "restaurants#show"
-  get "restaurants/new", to: "restaurants#new"
-  post "restaurants", to: "restaurants#create"
-  get "restaurants/:id/edit", to: "restaurants#edit"
-  patch "restaurants/:id", to: "restaurants#update"
-  delete "restaurants/:id", to: "restaurants#destroy"
+  # get "tasks", to: "tasks#index"
+  # get "tasks/new", to: "tasks#new"
+  # get "tasks/:id", to: "tasks#show"
+  # post "tasks", to: "tasks#create"
+  # get "tasks/:id/edit", to: "tasks#edit"
+  # patch "tasks/:id", to: "tasks#update"
+  # delete "tasks/:id", to: "tasks#destroy"
+
+  resources :tasks
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
